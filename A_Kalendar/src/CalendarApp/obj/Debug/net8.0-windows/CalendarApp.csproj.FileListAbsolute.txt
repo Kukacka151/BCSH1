@@ -1,0 +1,14 @@
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\bin\Debug\net8.0-windows\CalendarApp.exe
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\bin\Debug\net8.0-windows\CalendarApp.deps.json
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\bin\Debug\net8.0-windows\CalendarApp.runtimeconfig.json
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\bin\Debug\net8.0-windows\CalendarApp.dll
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\bin\Debug\net8.0-windows\CalendarApp.pdb
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\obj\Debug\net8.0-windows\CalendarApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\obj\Debug\net8.0-windows\CalendarApp.AssemblyInfoInputs.cache
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\obj\Debug\net8.0-windows\CalendarApp.AssemblyInfo.cs
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\obj\Debug\net8.0-windows\CalendarApp.csproj.CoreCompileInputs.cache
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\obj\Debug\net8.0-windows\CalendarApp.dll
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\obj\Debug\net8.0-windows\refint\CalendarApp.dll
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\obj\Debug\net8.0-windows\CalendarApp.pdb
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\obj\Debug\net8.0-windows\CalendarApp.genruntimeconfig.cache
+C:\Users\termi\Desktop\Sračkometál\A_Kalendar\src\CalendarApp\obj\Debug\net8.0-windows\ref\CalendarApp.dll
