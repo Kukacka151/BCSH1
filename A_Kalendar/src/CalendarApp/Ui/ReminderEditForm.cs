@@ -1,4 +1,5 @@
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 using CalendarApp.Models;
 
@@ -42,6 +43,7 @@ public sealed class ReminderEditForm : Form
         Text = "Upomínka - editace";
         Width = 520;
         Height = 360;
+        BackColor = Color.FromArgb(244, 248, 255);
         StartPosition = FormStartPosition.CenterParent;
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
@@ -54,6 +56,7 @@ public sealed class ReminderEditForm : Form
             ColumnCount = 2,
             RowCount = 4,
             AutoSize = true,
+            BackColor = Color.FromArgb(244, 248, 255),
         };
         layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35));
         layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65));
@@ -76,7 +79,19 @@ public sealed class ReminderEditForm : Form
         _doneCheckbox.Checked = CreatedOrEditedItem.IsDone;
         layout.Controls.Add(_doneCheckbox, 1, 2);
 
-        var btnRow = new FlowLayoutPanel { Dock = DockStyle.Fill, FlowDirection = FlowDirection.RightToLeft };
+        var btnRow = new FlowLayoutPanel
+        {
+            Dock = DockStyle.Fill,
+            FlowDirection = FlowDirection.RightToLeft,
+            AutoSize = true,
+            AutoSizeMode = AutoSizeMode.GrowAndShrink,
+            Padding = new Padding(8),
+        };
+        btnRow.BackColor = Color.FromArgb(230, 238, 251);
+        StyleDialogButton(_saveBtn);
+        StyleDialogButton(_cancelBtn);
+        _saveBtn.BackColor = Color.FromArgb(46, 117, 182);
+        _saveBtn.ForeColor = Color.White;
         btnRow.Controls.Add(_cancelBtn);
         btnRow.Controls.Add(_saveBtn);
 
@@ -102,6 +117,18 @@ public sealed class ReminderEditForm : Form
         };
 
         Controls.Add(layout);
+    }
+
+    private static void StyleDialogButton(Button button)
+    {
+        button.AutoSize = false;
+        button.Width = 96;
+        button.Height = 34;
+        button.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+        button.TextAlign = ContentAlignment.MiddleCenter;
+        button.FlatStyle = FlatStyle.Flat;
+        button.FlatAppearance.BorderSize = 0;
+        button.Margin = new Padding(6, 2, 0, 2);
     }
 }
 

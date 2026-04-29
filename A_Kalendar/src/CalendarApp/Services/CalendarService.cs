@@ -51,6 +51,14 @@ public sealed class CalendarService
             .ToList();
     }
 
+    public IReadOnlyList<ReminderItem> GetPendingRemindersDueBetween(DateTime fromExclusive, DateTime toInclusive)
+    {
+        return _reminders
+            .Where(r => !r.IsDone && r.DateTime > fromExclusive && r.DateTime <= toInclusive)
+            .OrderBy(r => r.DateTime)
+            .ToList();
+    }
+
     public void AddOrUpdateEvent(CalendarEvent item)
     {
         _eventsRepo.Upsert(_events, item);

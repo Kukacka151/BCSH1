@@ -1,4 +1,5 @@
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 using CalendarApp.Models;
 
@@ -42,6 +43,7 @@ public sealed class NoteEditForm : Form
         Text = "Poznámka - editace";
         Width = 520;
         Height = 360;
+        BackColor = Color.FromArgb(244, 248, 255);
         StartPosition = FormStartPosition.CenterParent;
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
@@ -54,6 +56,7 @@ public sealed class NoteEditForm : Form
             ColumnCount = 2,
             RowCount = 5,
             AutoSize = true,
+            BackColor = Color.FromArgb(244, 248, 255),
         };
         layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35));
         layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65));
@@ -74,7 +77,19 @@ public sealed class NoteEditForm : Form
         _textBox.Height = 120;
         layout.Controls.Add(_textBox, 1, 2);
 
-        var btnRow = new FlowLayoutPanel { Dock = DockStyle.Fill, FlowDirection = FlowDirection.RightToLeft };
+        var btnRow = new FlowLayoutPanel
+        {
+            Dock = DockStyle.Fill,
+            FlowDirection = FlowDirection.RightToLeft,
+            AutoSize = true,
+            AutoSizeMode = AutoSizeMode.GrowAndShrink,
+            Padding = new Padding(8),
+        };
+        btnRow.BackColor = Color.FromArgb(230, 238, 251);
+        StyleDialogButton(_saveBtn);
+        StyleDialogButton(_cancelBtn);
+        _saveBtn.BackColor = Color.FromArgb(46, 117, 182);
+        _saveBtn.ForeColor = Color.White;
         btnRow.Controls.Add(_cancelBtn);
         btnRow.Controls.Add(_saveBtn);
 
@@ -108,6 +123,18 @@ public sealed class NoteEditForm : Form
         };
 
         Controls.Add(layout);
+    }
+
+    private static void StyleDialogButton(Button button)
+    {
+        button.AutoSize = false;
+        button.Width = 96;
+        button.Height = 34;
+        button.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+        button.TextAlign = ContentAlignment.MiddleCenter;
+        button.FlatStyle = FlatStyle.Flat;
+        button.FlatAppearance.BorderSize = 0;
+        button.Margin = new Padding(6, 2, 0, 2);
     }
 }
 
