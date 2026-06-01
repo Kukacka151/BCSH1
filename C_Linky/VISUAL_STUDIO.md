@@ -2,11 +2,12 @@
 
 Nejjednodussi postup:
 
-1. Otevri Visual Studio.
-2. Zvol `Open a project or solution`.
-3. Vyber soubor `C_Linky/Linky.sln`.
-4. Nahoře zvol konfiguraci `Debug` a platformu `x64` nebo `x86`.
-5. Spust program pomoci `F5` nebo `Ctrl+F5`.
+1. Zkopiruj celou slozku `C_Linky` kamkoliv do pocitace.
+2. Otevri Visual Studio.
+3. Zvol `Open a project or solution`.
+4. Vyber soubor `Linky.sln` ve slozce `C_Linky`.
+5. Nahore zvol konfiguraci `Debug` a platformu `x64` nebo `x86`.
+6. Spust program pomoci `F5` nebo `Ctrl+F5`.
 
 Projekt je nastaveny jako konzolova aplikace v jazyce C. Pracovni slozka je
 nastavena na slozku projektu, takze program najde textove soubory:
@@ -15,6 +16,9 @@ nastavena na slozku projektu, takze program najde textove soubory:
 data/linka1.txt
 data/linka2.txt
 ```
+
+Slozka muze byt umistena kdekoliv. Dulezite je jen nepresouvat soubory
+`linka1.txt` a `linka2.txt` mimo slozku `data`.
 
 ## Kdyz si projekt vytvaris ve Visual Studiu rucne
 
