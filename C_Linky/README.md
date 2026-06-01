@@ -19,16 +19,9 @@ zastavka2 3
 
 Nazev zastavky je bez mezer a muze mit maximalne 19 znaku.
 
-## Kompilace a spusteni
+## Kompilace a spusteni bez Visual Studia
 
-Ve slozce `C_Linky`:
-
-```sh
-make
-./linky
-```
-
-Bez Makefile lze kompilovat i primo:
+Pokud nechces pouzit Visual Studio, lze program zkompilovat primo:
 
 ```sh
 gcc -std=c11 -Wall -Wextra -pedantic main.c linka.c -o linky
