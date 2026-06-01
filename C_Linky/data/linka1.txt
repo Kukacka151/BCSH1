@@ -1,0 +1,5 @@
+# format: nazev_zastavky cas_na_dalsi_zastavku
+zastavka1 4
+zastavka2 3
+zastavka3 5
+zastavka4 4
