@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 typedef struct kontejner {
     char kod;
     struct kontejner *dalsi;
@@ -26,15 +24,12 @@ int main(void)
     pridejKontejner(sklady, 1, vytvorKontejner('D'));
     pridejKontejner(sklady, 2, vytvorKontejner('E'));
 
-    printf("Pocatecni stav skladu:\n");
     vypisSklady(sklady, 3);
 
-    printf("\nPresuny kontejneru:\n");
     presunKontejner(sklady, 0, 1);
     presunKontejner(sklady, 2, 0);
     presunKontejner(sklady, 2, 1);
 
-    printf("\nKonecny stav skladu:\n");
     vypisSklady(sklady, 3);
 
     return 0;
