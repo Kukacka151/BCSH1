@@ -27,7 +27,7 @@ int main(void)
     pridejKontejner(sklady, 2, vytvorKontejner('E'));
 
     printf("Pocatecni stav skladu:\n");
-    vypisSklady(sklady, pocetSkladu);
+    vypisSklady(sklady, 3);
 
     printf("\nPresuny kontejneru:\n");
     presunKontejner(sklady, 0, 1);
